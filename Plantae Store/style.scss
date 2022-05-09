@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+$green: rgb(5, 56, 5);
+$font-col: #fff;
+
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: rgb(230, 231, 235);
+}
+
+.login{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    z-index: 1000;
+
+    a{
+        margin: 0 20px;
+        color: rgba(0,0,0,0.6);
+        cursor: pointer;
+        
+        &:hover{
+            color: rgba(0,0,0,1);
+        }
+    }
+}
+
+.header{
+    position: relative;
+    height: 100%;
+    width: 270px;
+    z-index: 1000;
+    
+    nav{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+        .fa{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: $font-col;
+            font-size: 30px;
+            display: flex;
+            
+            p{
+                font-family: Cannia;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+        }
+
+        img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        ul{
+            position: absolute;
+            top: 120px;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            justify-content: center;
+            text-align: justify;
+            
+            a{
+                color: rgba(255,255,255,0.8);
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-decoration: none;
+                transition: all 0.3s;
+                margin-left: 70px;
+
+                &:hover{
+                    color: rgba(255,255,255,1);
+                    letter-spacing: 2px;
+                }
+            }
+
+        }
+
+        .reco{
+            position: absolute;
+            bottom: 0;
+            width: 270px;
+            height: 30%;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+    
+            p{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                color: $font-col;
+                font-weight: 600;
+                font-size: 20px;
+            }
+    
+            img{
+                position: absolute;
+                bottom: 0;
+                height: 80%;
+                width: 80%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    .text{
+        position: absolute;
+        width: 400px;
+        top: 200px;
+        left: 400px;
+
+        h1{
+            color: $green;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        p{
+            margin: 20px 0;
+            line-height: 1.5;
+        }
+
+        button{
+            width: 200px;
+            height: 50px;
+            background: $green;
+            color: $font-col;
+            outline: none;
+            border: 1px solid #000;
+            border-radius: 10px;
+            letter-spacing: 1px;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &:hover{
+                background: darken($green, 5%);
+                letter-spacing: 2px;
+            }
+
+        }
+    }
+
+    img{
+        position: absolute;
+        bottom: 200px;
+        right: 200px;
+        transform: scale(1.4);
+        z-index: -1;
+    }
+
+    .circle{
+        position: absolute;
+        bottom: 100px;
+        right: 250px;
+        width: 350px;
+        height: 350px;
+        background: linear-gradient(transparent, rgb(230, 231, 235), rgb(197, 199, 206));
+        z-index: -2;
+        border-radius: 50%;
+    }
+}
