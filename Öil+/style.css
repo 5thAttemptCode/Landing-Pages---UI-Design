@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  width: 100%;
+  background: #cfcece;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+}
+
+nav ul {
+  position: absolute;
+  left: 100px;
+  width: 500px;
+}
+
+nav ul a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: rgba(20, 20, 20, 0.6);
+  font-size: 20px;
+}
+
+nav ul a:hover {
+  color: #141414;
+}
+
+nav ul .logo {
+  font-weight: 600;
+  color: #141414;
+}
+
+nav .user {
+  position: absolute;
+  right: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .user i {
+  font-size: 25px;
+  color: rgba(20, 20, 20, 0.6);
+  cursor: pointer;
+}
+
+nav .user i:hover {
+  color: #141414;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.container h1 {
+  position: absolute;
+  right: 250px;
+  top: 150px;
+  font-size: 200px;
+}
+
+.container .info {
+  position: absolute;
+  left: 230px;
+  top: 300px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgba(111, 172, 111, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  outline: 20px solid rgba(111, 172, 111, 0.2);
+  outline-offset: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: grey;
+  font-size: 100px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .info p {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .info .info-text {
+  position: absolute;
+  left: -150px;
+  top: -60px;
+  width: 330px;
+  color: #141414;
+  font-size: 16px;
+  text-align: right;
+  opacity: 0;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .info:hover {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.container .info:hover p {
+  opacity: 0;
+}
+
+.container .info:hover .info-text {
+  opacity: 1;
+}
+
+.container img {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+  z-index: -1;
+}
+
+.container .social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 10px 0;
+          transform-origin: 10px 0;
+}
+
+.container .social a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgba(20, 20, 20, 0.6);
+  font-size: 18px;
+}
+
+.container .social a:hover {
+  color: #141414;
+}
+
+.container .oil {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  width: 350px;
+  height: 200px;
+  background: rgba(111, 172, 111, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.container .oil:hover .photo img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .oil .photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.container .oil .photo img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .oil .text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  text-align: left;
+}
+
+.container .oil .text h3 {
+  font-size: 25px;
+}
+
+.container .oil .text p {
+  text-align: center;
+}
+
+.container .oil .text button {
+  width: 70%;
+  height: 40px;
+  border: 1px solid #000;
+  outline: none;
+  background: #89ca89;
+  cursor: pointer;
+}
+
+.container .oil .text button:hover {
+  background: #649c64;
+}
+/*# sourceMappingURL=style.css.map */
