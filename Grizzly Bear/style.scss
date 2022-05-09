@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+$font-col: #141414;
+$font-col-med: rgba(20,20,20,0.6);
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 80px;
+    z-index: 100;
+
+    .menu-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $font-col;
+
+        span{
+            width: 40px;
+            height: 2px;
+            background: #fff;
+        }
+    }
+
+    ul{
+        position: absolute;
+        right: 0;
+        width: calc(100% - 80px);
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 30px;
+            font-size: 18px;
+            color: $font-col-med;
+
+            &:hover{
+                font-weight: 500;
+                color: $font-col;
+            }
+        }
+    }
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .text{
+        position: relative;
+        height: 100%;
+        width: 50%;
+        background: rgba(255,255,255,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .description{
+            position: absolute;
+            bottom: 70px;
+            width: 500px;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            justify-content: right;
+
+            h1{
+                font-size: 50px;
+                letter-spacing: 1px;
+                font-family: 'Playfair Display SC', serif;
+                color: $font-col;
+            }
+
+            h4{
+                color: $font-col-med;
+                font-style: italic;
+            }
+
+            p{
+                letter-spacing: 1px;
+                text-align: justify;
+                font-weight: 500;
+                line-height: 1.6;
+                color: $font-col;
+            }
+
+            button{
+                width: 150px;
+                height: 50px;
+                border: 1px solid #000;
+                background: rgba(142, 148, 58, 1);
+                font-size: 18px;
+                font-weight: 600;
+                font-family: 'Playfair Display SC', serif;
+                cursor: pointer;
+                color: $font-col;
+
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .bear{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        bottom: -20px;
+        left: 500px;
+    }
+
+    .social{
+        position: absolute;
+        bottom: 30px;
+        right: 15px;
+        width: 50px;
+        height: 150px;
+        display: grid;
+        place-items: center;
+
+        a{
+            font-size: 25px;
+            color: rgba(255,255,255,0.5);
+
+            &:hover{
+                color: rgba(255,255,255,1);
+            }
+        }
+    }
+
+    .arrows{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 70px;
+        height: 140px;
+        display: grid;
+        
+        .arrow{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(142, 148, 58, 0.6);
+            cursor: pointer;
+
+            &:hover i{
+                color: #fff;
+            }
+
+            &.two{
+                border-top: 1px solid rgba(0,0,0,0.3);
+            }
+        }
+    }
+}

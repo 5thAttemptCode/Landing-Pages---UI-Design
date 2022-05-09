@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 80px;
+  z-index: 100;
+}
+
+nav .menu-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #141414;
+}
+
+nav .menu-btn span {
+  width: 40px;
+  height: 2px;
+  background: #fff;
+}
+
+nav ul {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 80px);
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 30px;
+  font-size: 18px;
+  color: rgba(20, 20, 20, 0.6);
+}
+
+nav ul a:hover {
+  font-weight: 500;
+  color: #141414;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.container img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .text {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .text .description {
+  position: absolute;
+  bottom: 70px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.container .text .description h1 {
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display SC', serif;
+  color: #141414;
+}
+
+.container .text .description h4 {
+  color: rgba(20, 20, 20, 0.6);
+  font-style: italic;
+}
+
+.container .text .description p {
+  letter-spacing: 1px;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #141414;
+}
+
+.container .text .description button {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #000;
+  background: #8e943a;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Playfair Display SC', serif;
+  cursor: pointer;
+  color: #141414;
+}
+
+.container .text .description button:hover {
+  color: #fff;
+}
+
+.container .bear {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  bottom: -20px;
+  left: 500px;
+}
+
+.container .social {
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  width: 50px;
+  height: 150px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.container .social a {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container .social a:hover {
+  color: white;
+}
+
+.container .arrows {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 70px;
+  height: 140px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.container .arrows .arrow {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(142, 148, 58, 0.6);
+  cursor: pointer;
+}
+
+.container .arrows .arrow:hover i {
+  color: #fff;
+}
+
+.container .arrows .arrow.two {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=style.css.map */
